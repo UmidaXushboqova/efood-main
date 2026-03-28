@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   background: linear-gradient(
     113.59deg,
     rgba(239, 239, 239, 0) -2.01%,
@@ -518,78 +522,73 @@ body {
   width: 100%;
 }
 
-.saying h2{
+.saying h2 {
   font-family: "Rubik", sans-serif;
-font-weight: 500;
-font-size: 36px;
-line-height: 100%;
-letter-spacing: 0.5px;
-color: #363853;
-text-align: center;
-
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+  color: #363853;
+  text-align: center;
 }
-.saying h2 span{
+.saying h2 span {
   color: #ff7a50;
 }
-.saying_content{
+.saying_content {
   display: flex;
   justify-content: space-between;
   gap: 100px;
   align-items: center;
-
 }
-.saying_content img{
+.saying_content img {
   width: 433px;
 }
 
-.saying_content_text>p{
+.saying_content_text > p {
   font-family: "Rubik", sans-serif;
-font-weight: 400;
-font-size: 20px;
-line-height: 45px;
-letter-spacing: 0.5px;
-color: #363853;
-
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 45px;
+  letter-spacing: 0.5px;
+  color: #363853;
 }
 
-.saying_name_icon{
+.saying_name_icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.saying_name h3{
+.saying_name h3 {
   font-family: "Rubik", sans-serif;
-font-weight: 500;
-font-size: 20px;
-line-height: 100%;
-letter-spacing: 0%;
-color: #ff7a50;
-
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ff7a50;
 }
-.saying_name p{
+.saying_name p {
   font-family: "Rubik", sans-serif;
-font-weight: 400;
-font-size: 14px;
-line-height: 100%;
-letter-spacing: 0%;
-color: gray;
-
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: gray;
 }
-.saying_icon{
+.saying_icon {
   display: flex;
   justify-content: space-between;
   gap: 45px;
 }
 
-.saying_icon i{
+.saying_icon i {
   width: 50px;
   height: 50px;
   color: grey;
   cursor: pointer;
 }
 
-.saying_icon i:hover{
+.saying_icon i:hover {
   color: #ff7a50;
 }
 
@@ -720,6 +719,101 @@ color: gray;
   letter-spacing: 0%;
   text-align: center;
   color: #ffffff;
+}
+
+/* *************************** */
+
+.main_footer .foot_content {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 2fr 2fr;
+  gap: 20px;
+}
+
+.main_footer .foot_content .foot_item img {
+  width: 116px;
+}
+
+.main_footer .foot_content .foot_item .link {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.main_footer .foot_content > .foot_item > .link i {
+  font-size: 16px;
+  color: #37383d;
+}
+.main_footer .foot_content > .foot_item > .link > span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #37383d;
+}
+
+.main_footer .foot_content > .foot_item > .link > button {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #eeeeef;
+  border: none;
+  cursor: pointer;
+}
+
+.main_footer .foot_content > .foot_item > h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 49px;
+  letter-spacing: 1%;
+  color: #37383d;
+}
+
+.main_footer .foot_content > .foot_item > a {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 49px;
+  letter-spacing: 1%;
+  color: #37383d;
+  text-decoration: none;
+  display: block;
+}
+
+.main_footer > .foot_tag {
+  border-top: 2px solid #9696962a;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 25px 0;
+}
+
+.main_footer > .foot_tag > p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #646464;
+}
+
+.main_footer > .foot_tag > .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.main_footer > .foot_tag > .menu > a {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #646464;
+  text-decoration: none;
 }
 
 @media (max-width: 1220px) {
@@ -859,6 +953,11 @@ color: gray;
   .section_restaurant .pizza_cards {
     gap: 30px;
   }
+
+  .main_footer .foot_content {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -979,11 +1078,11 @@ color: gray;
     gap: 20px;
   }
 
-  .saying h2{
+  .saying h2 {
     font-size: 28px;
   }
 
-  .saying_content_text p{
+  .saying_content_text p {
     font-size: 17px;
     line-height: 30px;
   }
@@ -992,7 +1091,7 @@ color: gray;
     gap: 30px;
   }
 
-  .saying img{
+  .saying img {
     width: 320px;
   }
 
@@ -1040,6 +1139,9 @@ color: gray;
     font-size: 14px;
   }
 
+  .main_footer .foot_content {
+    grid-template-columns: 3fr 2fr 2fr;
+  }
 }
 
 @media (max-width: 720px) {
@@ -1094,7 +1196,7 @@ color: gray;
     width: 80%;
   }
 
-  .saying_content{
+  .saying_content {
     display: flex;
     flex-direction: column;
   }
@@ -1123,6 +1225,10 @@ color: gray;
   .subscribe .enter_email button {
     font-size: 12px;
   }
+
+  .main_footer .foot_content {
+    grid-template-columns: 3fr 2fr;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1142,5 +1248,67 @@ color: gray;
 
   .main_categories .mini_container .cards_container .card button {
     width: 70%;
+  }
+
+  /* *************************** */
+
+  .main_footer .foot_content {
+    gap: 10px;
+  }
+
+  .main_footer .foot_content .foot_item img {
+    width: 80px;
+  }
+
+  .main_footer .foot_content .foot_item .link {
+   
+    gap: 8px;
+    margin: 10px 0;
+  }
+
+  .main_footer .foot_content > .foot_item > .link i {
+    font-size: 12px;
+
+  }
+  .main_footer .foot_content > .foot_item > .link > span {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .main_footer .foot_content > .foot_item > .link > button {
+    width: 25px;
+    height: 25px;
+  }
+
+  .main_footer .foot_content > .foot_item > h3 {
+    
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .main_footer .foot_content > .foot_item > a {
+    font-size: 13px;
+    line-height: 26px;
+  }
+
+  .main_footer > .foot_tag {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .main_footer > .foot_tag > p {
+    font-size: 11px;
+    line-height: 12px;
+  }
+
+  .main_footer > .foot_tag > .menu {
+    gap: 20px;
+  }
+
+  .main_footer > .foot_tag > .menu > a {
+    font-size: 11px;
+    line-height: 12px;
   }
 }
